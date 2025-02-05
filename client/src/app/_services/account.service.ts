@@ -11,6 +11,7 @@ export class AccountService {
   private http = inject(HttpClient);
   baseUrl = environment.apiUrl;
   currentUser = signal<User | null>(null);
+  currentUser$: any;
 
   login(model: any) {
     return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(

@@ -1,0 +1,25 @@
+.img-thumbnail {
+    margin: 25px;
+    width: 85%;
+    height: 85%;
+
+}
+
+.card-body {
+    padding: 0 25px;
+}
+
+.card-footer {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-top: none;
+}
+
+.btn-circle {
+    width: 40px; /* Set the width and height to be the same */
+    height: 40px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

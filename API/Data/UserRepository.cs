@@ -44,11 +44,15 @@ public class UserRepository(DataContext context, IMapper mapper) : IUserReposito
         .ToListAsync();
     }
 
-    public async Task<bool> SaveAllASync()
+    public async Task<bool> SaveAllAsync()
     {
         return await context.SaveChangesAsync() > 0;
     }
 
+    public Task<bool> SaveAllASync()
+    {
+        throw new NotImplementedException();
+    }
 
     public void Update(AppUser user)
     {
